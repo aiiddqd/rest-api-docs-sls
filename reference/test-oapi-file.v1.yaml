@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+  title: Название апихи
+  version: '1.1'
+  contact:
+    name: R2 D2
+    url: github.com
+    email: uptimizt@gmail.com
+  termsOfService: test
+  license:
+    name: MIT
+    url: sdfdsf
+  description: Описание апихи
+servers:
+  - url: 'http://localhost:3000'
+    description: test
+paths:
+  /users/user:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-users-user
+      description: ''
+      requestBody: {}
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      properties:
+        id:
+          type: string
+      x-examples: {}
+  securitySchemes:
+    ttt:
+      name: sdfdsfdsf
+      type: apiKey
+      in: query
+      description: sdfdsfdsf
